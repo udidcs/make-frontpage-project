@@ -47,17 +47,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+input:focus {outline:none;}
 
 header {
-    background-color: red;
-    background-image: url("./img/Top_background.png");
+    background-image: url("./img/background1.png");
 }
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 300px;
+    gap: 280px;
     height: 80px;
 }
 article {
@@ -80,6 +80,7 @@ article {
     align-items: center;
     gap: 25px;
 }
+
 .section_top {
     display:flex;
     flex-direction: row;
@@ -94,23 +95,115 @@ article {
     justify-content: center;
     gap: 30px;
 }
+.section_middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.section_middle_items-description {
+    text-align : center;
+    margin: 60px 0px 30px 0px;
+}
+.section_middle_items_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+.section_middle_items img {
+    width: 378px;
+    height: 378px;
+    margin-top:15px;
+}
+.section_bottom {
+    text-align: center;
+}
 
+
+
+.section_map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section_map div{
+    width: 80%;
+}
+
+.footer_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 340px;
+    background-image: url("./img/background2.png");
+}
+.footer_top_blogpost {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 1280px;
+    height: 200px;
+    transform: translate(0, -50%);
+    background-image: url("./img/background3.png");
+    background-repeat: no-repeat;
+}
+.footer_top_blogpost_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 530px;
+    height: 60px;
+    gap: 0px;
+    background-image: url("./img/enter-email-Box.png");
+}
+.footer_top_blogpost_input_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer_bottom {
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 800px;
+}
+.footer_bottom_span-group > img {
+    margin-left: 5px;
+}
+.btn_gotop {
+	position:fixed;
+	bottom:30px;
+	right:30px;
+	z-index:999;
+}
+</style>
     </style>
 </head>
 <body>
+<a href="#">
+<img src="img/scroll-top-btn.png" class="btn_gotop">
+</a>
 <header>
     <nav>
         <span-group>
-            <img src="./img/Logo-fin.svg">
+            <img src="./img/logo-hodu.svg">
         </span-group>
         <span-group class="nav_span-group">
             <span>Home</span>
             <span>About</span>
             <span>Support</span>
             <span>
-                <img src="./img/Download_btn.png">
+                <img src="./img/download-btn.png">
             </span>
-        </span-group>
         </span-group>
     </nav>
     <article>
@@ -121,38 +214,101 @@ article {
                 Lorem lpsum has been the industry's standard dummy text<br>
                 ever since the 1500s, when an unknown</div>
             <div>
-                <img src="./img/Download_btn.png">
+                <img src="./img/download-btn.png">
             </div>
             
         </div>
         <div>
-            <img style="height: 500px"src="./img/고양이 1.png">
+            <img style="height: 500px"src="./img/articlecat.png">
         </div>
         
     </article>
 </header>
 <section>
     <div class="section_top">
-        <span><img src="./img/img_4.png" style="width: 660px; height:390px"></span>
+        <span><img src="./img/maincat.png" style="width: 660px; height:390px"></span>
         <div class="section_top_right">
             <div style="font-weight: bold; font-size: 2.2em">Lolem lpsum is simply<br> dummy text of the printing<br> and dummy text</div>
             <div style="font-size: 1em; line-height: 20px;">Lorem Ipsum is simply dummy text of the printing and typesetting<br>
                 industry. </div>
         </div>
     </div>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="section_middle">
+        <div class="section_middle_items-description">
+            <div style="margin-bottom: 40px; font-size:45px; font-weight:bold; color:#D97652">dummy text of the printing and dummy</div>
+            <div style="line-height: 20px;">Lorem Ipsum is simply <span style="color:#D97652">dummy text</span> of the printing and typesetting industry.<br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</div>
+        </div>
+        <div class="section_middle_items">
+            <div class="section_middle_items_row">
+                <img src="./img/cat1.png";>
+                <img src="./img/cat2.png";>
+                <img src="./img/cat3.png";>
+            </div>
+            <div class="section_middle_items_row">
+                <img src="./img/cat4.png">
+                <img src="./img/cat5.png">
+                <img src="./img/cat6.png">
+            </div>
+        </div>
+        <div>
+            <div style="text-align : center; margin: 40px 0px 25px 0px; font-size: 24px; font-weight: bold;">Continue exploring HODU</div>
+            <div style="text-align : center; margin: 25px 0px 80px 0px;"><img src="./img/showmore.png"></div>
+        </div>
     </div>
-    <div>
-        <div></div>
-        <div></div>
+    <div class="section_bottom">
+        <img src="./img/line.png">
+    </div>
+    <div class="section_map">
+        <div style="font-size: 25px; font-weight: bold; margin-top: 60px">Where you’ll be</div>
+        <div style="line-height: 20px; margin-top: 30px;">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</div>
+        <div id="map" style="margin: 50px 0px 160px 0px; width:80%; height:570px"></div>
     </div>
 </section>
 <footer>
-
+    <div class="footer_top">
+        <div class="footer_top_blogpost" style="white-space: nowrap;">
+            <span>
+                <div style="color: white; font-size: 35px; font-weight: bold; margin-bottom: 20px;">
+                    Subscribe to our Blog post
+                </div>
+                <div style="color: white; line-height: 20px;">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text 
+                </div>
+            </span>
+            <span class="footer_top_blogpost_input">
+                <div class="footer_top_blogpost_input_left">
+                    <img style="margin-left:30px; width: 24px; height: 24px;"; src="./img/mail.svg">
+                    <input type="text" style="border: none; width:315px; height: 30px; font-size:30px">
+                </div>
+                <img src="./img/subscribe_btn.png">
+            </span>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <span-group>
+            <img src="./img/logo-hodu.svg">
+        </span-group>
+        <span-group class="footer_bottom_span-group">
+            <img src="./img/icon-blog.png">
+            <img src="./img/icon-insta.png">
+            <img src="./img/icon-facebook.png">
+            <img src="./img/icon-youtube.png">
+        </span-group>
+    </div>
 </footer>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c079a8053ab8940d9f4fb6e74f5e2db6"></script>
+<script>
+
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new kakao.maps.Map(mapContainer, mapOption);
 </script>
 </body>
 </html>
