@@ -383,18 +383,30 @@ var map = new kakao.maps.Map(mapContainer, mapOption);
             console.error("데이터를 가져오는데 문제가 발생했습니다 :", error);
         }
 
-        
+        git 
     }
+
+    let cnt = 0;
 
     function makeImageList(datas){
 
         plus = "";
-        plus += "<div class='section_middle_moreitems_row'>";
+        
+        
+        
         datas.forEach((item)=>{
+            cnt += 1;
+            if (cnt % 3 == 1) {
+                plus += "<div class='section_middle_moreitems_row'>";
+            }
             plus += "<img src="+ item.download_url +" alt=''>";
+            if (cnt % 3 == 0) {
+                plus += "</div>";
+                imageList.innerHTML += plus
+            }
         });
-        plus += "</div>";
-        imageList.innerHTML += plus
+        
+        
     }
 
     
