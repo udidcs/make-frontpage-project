@@ -63,7 +63,7 @@ article {
     gap: 100px;
 }
 .header_class {
-    
+    white-space: nowrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,6 +158,7 @@ article {
     transform: translate(0, -50%);
     background-image: url("./img/background3.png");
     background-repeat: no-repeat;
+    white-space: nowrap;
 }
 .footer_top_blogpost_input {
     display: flex;
@@ -187,10 +188,11 @@ article {
     justify-content: center;
     align-items: center;
     gap: 800px;
-
- 
-
 }
+.footer_bottom_span-group {
+    white-space: nowrap
+}
+
 .footer_bottom_span-group > img {
     margin-left: 5px;
 }
