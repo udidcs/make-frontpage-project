@@ -1,5 +1,5 @@
 ![20240119152013](https://github.com/udidcs/make-frontpage-project/assets/46997884/24d2d93d-96c3-412f-a8c5-baf13a400466) <br>
-[깃헙전략] <br>
+✅ 깃헙전략 <br>
 develop brancn : 메인 브랜치 <br>
 feature branch : 기능 개발 <br>
 release breanch : 릴리즈 브랜치 <br>
